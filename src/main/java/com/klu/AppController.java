@@ -32,6 +32,11 @@ public class AppController {
 	public String update(@RequestBody Product p) {
 		return s.updateData(p);
 	}
+	
+	@GetMapping("/home")
+	public String home() {
+		return "Working fine";
+	}
 
 	/* 
 	@DeleteMapping("/delete/{id}")
